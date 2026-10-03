@@ -12,10 +12,27 @@ instead of guessing.
 
 ## Install
 
-Requirements: an Apple Silicon Mac, macOS, and Rust 1.88 or newer.
+Install on an Apple Silicon Mac with macOS using [Homebrew](https://brew.sh/)
+and [Marian’s tap](https://github.com/marianposaceanu/homebrew-tap):
 
 ```sh
-git clone <repository-url> mextdisplay
+brew tap marianposaceanu/tap
+brew install mextdisplay
+```
+
+To upgrade to the latest release:
+
+```sh
+brew update
+brew upgrade mextdisplay
+```
+
+### From source
+
+Building from source requires Rust 1.88 or newer.
+
+```sh
+git clone https://github.com/marianposaceanu/mextdisplay.git
 cd mextdisplay
 cargo install --path .
 ```
